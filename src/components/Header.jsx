@@ -6,10 +6,14 @@ function Header({text, bgColor, textColor}) {
     backgroundColor: bgColor,
     color: textColor,
   }
+  const byName = {
+    color: 'white',
+  }
   return (
     <header style={headerStyles}>
         <div className='container'>
             <h2>{text}</h2>
+            <h4 style={byName}>by Najeebullah Khan</h4>
         </div>
     </header>
     
@@ -17,7 +21,7 @@ function Header({text, bgColor, textColor}) {
 }
 
 Header.defaultProps = {
-  text: 'Feedback UI',
+  text: 'Feedback App',
   bgColor: 'blue',
   textColor: 'black',
 }
